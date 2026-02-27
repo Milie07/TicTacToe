@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #f4da72,
+    #beda92,
+    #82b8b8,
+    #6c77be,
+    #c16e9a,
+    #e24141
+  );
+  font-family: "Indie Flower", cursive;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: rgb(90, 64, 100);
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 5px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #6c77be, #c16e9a);
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.6));
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+button:hover {
+  background: rgb(90, 64, 100);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgb(0 0 0 / 45%);
+}
+
+button:active {
+  transform: translateY(0px);
+  box-shadow: 0 4px 15px rgb(0 0 0 / 30%);
+}
+
+p, h2{
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(90, 64, 100);
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.6));
+}
+
+select, option {
+  font-family: "Indie Flower", cursive;
+  font-size: 0.9375rem;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+  filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.3));
+}
+
+.choice {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.player1, .player2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-board {
+  width: 320px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  background: linear-gradient(
+    to bottom,
+    rgba(244, 218, 114, 0.5),
+    rgba(190, 218, 146),
+    rgba(130, 184, 184, 0.5),
+    rgba(108, 119, 190, 0.5),
+    rgba(193, 110, 154, 0.5),
+    rgba(226, 65, 65, 0.5)
+  );
+  box-shadow: 0 4px 15px rgb(0 0 0 / 30%);
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 5px;
+}
+
+.cell {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 15px rgb(0 0 0 / 30%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: rgb(90, 64, 100);
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.6));
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 6px 20px rgb(0 0 0 / 50%);
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.6));
+}
+
